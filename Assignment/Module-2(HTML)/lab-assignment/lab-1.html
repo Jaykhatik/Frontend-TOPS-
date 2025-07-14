@@ -1,0 +1,90 @@
+<!-- HTML Basics
+(Lab Assignment) -->
+<!-- 
+Task: Create a simple HTML webpage that includes:
+        • A header (<head>), footer (<footer>),main section (<main>), and asidesection (<aside>).
+        • A paragraph with some basic text.
+        • A list (both ordered and unordered).
+        • A link that opens in a new tab. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Webpage</title>
+    <style>
+        .main {
+            height: 600px;
+            width: auto;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        .main1{
+            display: flex;
+            gap: 20px;
+        }
+        .content{
+            height: 400px;
+            width: 915px;
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        .asidebar {
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <h1 style="border: 2px solid black; text-align: center;">Website of Sports</h1>
+        </header>
+        <div class="main1">
+            <div class="asidebar">
+                <aside>
+                    <h2><u>Side menu</u></h2>
+                    <p>This is an aside section with additional info.</p>
+                </aside>
+            </div>
+            <div class="content">
+                <main>
+                    <p>They are: Aquatics (Swimming, Marathon Swimming, Diving,
+                        Water Polo, Artistic Swimming), Archery, Athletics, Badminton,
+                        Baseball Softball*, Basketball (3x3, Basketball), Canoe (Canoe
+                        Sprint, Canoe Slalom), Cricket*, Cycling (BMX Freestyle, BMX'
+                        Racing, Road Cycling, Track Cycling), Equestrian Dressage,
+                        Eventing, </p>
+                    <h2><u>Ordered List</u></h2>
+                    <ol>
+                        <li>First item</li>
+                        <li>Second item</li>
+                        <li>Third item</li>
+                    </ol>
+                    <h2><u>Unordered List</u></h2>
+                    <ul>
+                        <li>Apple</li>
+                        <li>Banana</li>
+                        <li>Cherry</li>
+                    </ul>
+                    <h2><u>Anchor tag</u></h2>
+                    <p>Visit <a href="https://www.amazon.in/" target=" _blank">Amazone Website</a> for
+                        more information.</p>
+                </main>
+            </div>
+        </div>
+        <footer style="border: 2px solid black; margin-top: 20px;">
+            <center>
+                <p>© 2025 simple Services Pvt. Ltd.</p>
+            </center>
+        </footer>
+    </div>
+</body>
+
+</html>

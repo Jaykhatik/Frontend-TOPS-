@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+
+            height: 380px;
+            width: 380px;
+            margin: 100px auto;
+            border: 2px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset style="height: 550px; width: 400px;">
+
+        <legend>Contact Form</legend>
+        <div class="main">
+            <form action="">
+                <label for="fullname">Fullname</label>
+                <br>
+                <input type="text" name="fullname" id="fullname" minlength="5" maxlength="20" required>
+                <br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="phone">Phone Number:</label>
+                <br>
+                <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    title="Format: 123-456-7890">
+                <br><br>
+                <label for="subject">Subject:</label>
+                <br>
+                <select id="subject" name="subject" required>
+                    <option value="" hidden>--Please choose an option--</option>
+                    <option value="">General Inquiry</option>
+                    <option value="">Technical Support</option>
+                    <option value="">Feedback</option>
+                </select>
+                <br><br>
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" name="message" rows="5" cols="40" required minlength="10"
+                    maxlength="500"></textarea>
+                <br><br>
+                <button type="submit">submit</button>
+            </form>
+        </div>
+    </fieldset>
+</body>
+
+</html>

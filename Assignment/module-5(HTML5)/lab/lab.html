@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio and Video Tag Example</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            height: auto;
+            width: 850px;
+            border: 2px solid #ccc;
+            margin: 30px auto;
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .main-head {
+            height: 60px;
+            border-bottom: 2px solid #4a90e2;
+            background-color: #4a90e2;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .mix {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .main-audio, .main-video {
+            height: auto;
+            width: 400px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .audio-head, .video-head {
+            height: 50px;
+            background-color: #e0f7fa;
+            color: #00796b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border-bottom: 2px solid #b2dfdb;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .audio, .video {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        audio, video {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="main-head">
+            <h2>Audio and Video Tags</h2>
+        </div>
+        <div class="mix">
+            <div class="main-audio">
+                <div class="audio-head">
+                    <h4>🎵Audio</h4>
+                </div>
+                <div class="audio">
+                    <audio controls loop muted autoplay>
+                        <source src="image/Title Track Saiyaara 128 Kbps.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+            <div class="main-video">
+                <div class="video-head">
+                    <h4>🎬Video</h4>
+                </div>
+                <div class="video">
+                    <video width="335" height="280" muted loop autoplay controls>
+                        <source src="image/Barbaad Song _ Saiyaara _ Ahaan Panday, Aneet Padda _ The Rish _ Jubin Nautiyal _ In Cinemas 18 July.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

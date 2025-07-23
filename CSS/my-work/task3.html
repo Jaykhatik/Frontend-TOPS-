@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Patua+One&display=swap"
+        rel="stylesheet">
+    <!--  -->
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+        }
+
+        .main {
+            height: 400px;
+            width: 300px;
+            border: 2px solid black;
+            margin: 20px auto;
+        }
+
+        .main h4 {
+            text-align: center;
+            color: red;
+        }
+
+        .main p {
+            text-align: center;
+        }
+
+        .main button {
+            width: 90%;
+            height: 25px;
+            background-color: rgb(116, 230, 220);
+            border: none;
+            color: whitesmoke;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+
+        .main .b2:hover {
+            outline: 5px solid rgb(116, 230, 220);
+            /* outer border */
+            outline-offset: 6px;
+            /*gap between border and button*/
+            transition: all 0.2s ease-in;
+        }
+
+        .main1 {
+            height: 230px;
+            width: 100%;
+            /* border: 2px solid black; */
+            text-align: center;
+            margin: 0px auto;
+            position: relative;
+            padding-top: 5px;
+        }
+
+
+        .main1 label {
+            background-color: red;
+            font-weight: 700;
+            text-align: center;
+            margin-left: 84%;
+            padding: 5px;
+            color: whitesmoke;
+        }
+
+        .main1 img {
+            height: 200px;
+            width: 180px;
+            margin-bottom: 0px;
+        }
+
+        .main1 button {
+            position: absolute;
+            z-index: 2;
+            background-color: black;
+            color: white;
+            border: none;
+            opacity: 0;
+            border-radius: 5px;
+            width: 100%;
+            right: 0px;
+            height: 30px;
+        }
+
+        .main1:hover {
+            background-color: rgb(236, 231, 231);
+        }
+
+        .main1:hover img {
+            transform: rotatey(180deg);
+            transition: all 1s ease;
+            border-radius: 5px;
+        }
+
+        .main1:hover .b1 {
+            opacity: 1;
+            transform: translatey(200px);
+            transition: all 1s ease;
+        }
+
+        .main1:hover .b1:hover {
+            background-color: rgb(116, 230, 220);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="main1">
+            <label for="">New</label>
+            <button class="b1">Quick View</button><br>
+            <img src="images/m1.jpg" alt="">
+
+        </div>
+        <h4>Formla Blue Paint</h4>
+        <p>$45.99 <del style="color: gray;">$69.71</del></p>
+        <button class="b2">ADD TO CART</button>
+    </div>
+</body>
+
+</html>

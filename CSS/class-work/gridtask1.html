@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: whitesmoke;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            row-gap: 20px;
+            column-gap: 20px;
+            padding: 20px;
+            /* height: 800px;
+            width: 800px; */
+            max-width: 100%;
+            border: 2px solid black;
+        }
+
+        .item {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            /* text-align: center; */
+        }
+
+        #i1 {
+            grid-row: 1/4;
+            border: 2px solid black;
+            height: auto;
+            width: auto;
+            background-color: rgba(109, 192, 75, 255);
+        }
+
+        #i2 {
+            grid-column: 2/4;
+            border: 2px solid black;
+            height: 200px;
+            width: auto;
+             background-color: rgba(109, 192, 75, 255);
+        }
+
+        #i3 {
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            background-color: #e93537;
+        }
+
+        #i4 {
+            border: 2px solid black;
+            height: 200px;
+            width: auto;
+            background-color: #fbb232;
+        }
+
+        #i5 {
+            border: 2px solid black;
+            height: 200px;
+            width: auto;
+            background-color: #e93537;
+        }
+
+        #i6 {
+            width: 200px;
+            height: auto;
+            border: 2px solid black;
+            grid-column: 4 / 4;
+            grid-row: 2/ 4;
+             background-color: rgba(109, 192, 75, 255);
+        }
+
+        #i7{
+             border: 2px solid black;
+            height: 200px;
+            width: auto;
+            background-color: #e93537;
+        }
+        #i8 {
+            border: 2px solid black;
+            height: 200px;
+            width: auto;
+            background-color: #fbb232;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="i1"></div>
+        <div class="item" id="i2"></div>
+        <div class="item" id="i3"></div>
+        <div class="item" id="i4"></div>
+        <div class="item" id="i5"></div>
+        <div class="item" id="i6"></div>
+        <div class="item" id="i7"></div>
+        <div class="item" id="i8"></div>
+    </div>
+</body>
+
+</html>

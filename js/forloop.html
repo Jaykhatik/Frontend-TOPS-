@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="i1" placeholder="enter a number">
+    <button onclick="myfun()">submit</button>
+    <!-- <p id="result"></p> -->
+    <!-- <script>
+        function myfun(){
+            var v1=document.getElementById("i1").value;
+            for(let i=0;i<=v1;i++){
+                document.write(i+"<br>");
+            }
+        }
+    </script> -->
+    <!-- <script>
+        function myfun() {
+            var v1 = document.getElementById("i1").value;
+            for (let i = v1; i >= 1; i--) {
+                document.write(i + "<br>");
+            }
+        }
+    </script> -->
+    <script>
+        function myfun() {
+            // var num = document.getElementById("i1").value;
+            // var rev = 0;  
+
+            // for (let i = num; i > 0; i = parseInt(i / 10)) {
+            //     let digit = i % 10;         // get last digit
+            //     rev = (rev * 10) + digit;   // build reverse
+            // }
+
+            // document.getElementById("result").innerHTML = "Reverse: " + rev;
+            let n1 = document.getElementById("i1").value;
+            remainder = 0;
+            rev = 0;
+            while (n1 != 0) {
+                remainder = n1 % 10;
+                rev = rev * 10 + remainder;
+                n1 = Math.floor(n1 / 10);
+            }
+            document.write("Reverse : " + rev);
+        }
+    </script>
+</body>
+
+</html>

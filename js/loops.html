@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="i1" placeholder="enter a number">
+    <button onclick="fabonaci()">submit</button>
+    <script>
+        function fabonaci(){
+            let number1=document.getElementById("i1").value;
+            let n=number1;
+            let a=0,b=1;
+            document.write("Fabonacci series : "+"<br>");
+            for(let i=0;i<=n;i++){
+                document.write(a+"<br>")
+                let c=a+b;
+                a=b;
+                b=c;
+            }
+        }
+    </script>
+    <hr>
+        <input type="number" id="i2" placeholder="enter a number">
+        <button onclick="factorail()">submit</button>
+
+    <script>
+        function factorail(){
+            let n2=document.getElementById("i2").value;
+            let fac =1;
+            let i=1;
+            while (i<=n2) {
+                fac=fac*i;
+                i++;
+            }
+            document.write(fac+"<br>")
+        }
+    </script>
+</body>
+
+</html>

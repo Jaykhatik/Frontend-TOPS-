@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>press 1 for Factorial number</h1>
+    <h1>press 2 for even&odd</h1>
+    <h1>press 3 for Fabonacci series</h1>
+    <input type="number" id="i1">
+    <button type="submit" onclick="choices()">enter choice</button>
+    <script>
+        function choices() {
+            let n1 = document.getElementById('i1').value;
+            switch (n1) {
+                case '1':
+                    let fac = 1;
+                    let i = 1;
+                    while (i <= 5) {
+                        fac = fac * i;
+                        i++;
+                    }
+                    document.write(fac);
+                    break;
+
+                case '2':
+                    var a = 21;
+                    if (a % 2 == 0) {
+                        document.write(a, "is even")
+                    }
+                    else {
+                        document.write(a, "is odd")
+                    }
+                    break;
+
+
+                case '3':
+                    
+                default:
+                    document.write("Invalid choice")
+
+            }
+        }
+    </script>
+</body>
+
+</html>

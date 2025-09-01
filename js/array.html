@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Enter 5 Values</h2>
+    <input type="text" id="input1" placeholder="Enter value 1"><br><br>
+    <input type="text" id="input2" placeholder="Enter value 2"><br><br>
+    <input type="text" id="input3" placeholder="Enter value 3"><br><br>
+    <input type="text" id="input4" placeholder="Enter value 4"><br><br>
+    <input type="text" id="input5" placeholder="Enter value 5"><br><br>
+
+    <button onclick="storeValues()">Store in Array</button>
+
+    <h3>Stored Array:</h3>
+    <p id="result"></p>
+</body>
+<script>
+    function storeValues() {
+        let arr = [];
+
+        arr[0] = document.getElementById("input1").value;
+        arr[1] = document.getElementById("input2").value;
+        arr[2] = document.getElementById("input3").value;
+        arr[3] = document.getElementById("input4").value;
+        arr[4] = document.getElementById("input5").value;
+
+        document.getElementById("result").innerText = "Array: "+arr;
+    }
+
+</script>
+
+</html>
